@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="hu"><head><meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+<meta charset="UTF-8"><title>random számok</title>
+
+<style type="text/css">
+fieldset {
+width: 600px;
+margin-right: auto;
+margin-left: auto;
+}
+label {
+float: left;
+width: 250px;
+text-align: right;
+margin-right: 1em;
+clear: left;
+}
+span {
+float: left;
+}
+button {
+display: block;
+clear: both;
+margin: auto;
+}
+</style>
+<script type="text/javascript">
+function roll(){
+//create variables for form elements
+var spnRaw = document.getElementById("spnRaw");
+var spn100 = document.getElementById("spn100");
+var spnFinal = document.getElementById("spnFinal");
+//get random number
+var raw = Math.random();
+spnRaw.innerHTML = raw;
+//multiply by 100
+var times100 = raw * 100;
+spn100.innerHTML = times100;
+//get the ceiling
+var final = Math.ceil(times100);
+spnFinal.innerHTML = final;
+} // end roll
+</script>
+</head><body style="background-image: url(file:///C:/Users/zso/Desktop/uj%20sulimix%20offline/data/102005.jpg);">
+<h1>Make random numbers 1 - 100</h1>
+<form>
+<fieldset>
+<label>raw</label>
+<span id="spnRaw">0</span>
+<label>times 100</label>
+<span id="spn100">0</span>
+<label>final</label>
+<span id="spnFinal">0</span>
+<button type="button" onclick="roll()">
+roll the dice
+</button>
+</fieldset>
+</form>
+</body></html>
