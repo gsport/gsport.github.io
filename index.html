@@ -14,7 +14,7 @@ font-family: 'ni7seg';
 }
 </style>
 </head>
-<body style="color: rgb(102, 255, 255); background-color: black; direction: ltr;" alink="#66ffff" link="#66ffff" vlink="red">
+<body style="color: white; background-color: black;" alink="white" link="white" vlink="white">
 <span style="font-family: Script;"><span style="font-weight: bold;"><span style="font-family: NI7SEG;"></span></span></span>
 <h1 style="color: rgb(253, 253, 253); text-align: right;"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"><img style="width: 263px; height: 197px; float: right;" alt="" src="data/cool-loading-animated-gif-8.gif"></span></big></big></big></big></big></big></span></h1>
 <h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"><img style="width: 263px; height: 197px; float: left;" alt="" src="data/cool-loading-animated-gif-8.gif"></span></big></big></big></big></big></big></span></h1>
@@ -26,15 +26,24 @@ font-family: 'ni7seg';
 <span style="font-weight: bold;"></span></div>
 <span style="font-weight: bold;"></span>
 <h1 style="color: rgb(253, 253, 253); text-align: right;"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="color: rgb(253, 253, 253); text-align: right;"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="color: rgb(253, 253, 253); text-align: right;"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
-<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><big><big><big><span style="font-family: NI7SEG;"></span></big></big></big></big></big></big></span></h1>
 <a href="data/favicon.ico"> <br>
 </a>
+<script>function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) history.go(-1);
+if (pass1.toLowerCase() == "matex") {
+alert('ACCESS GARANTED!');
+window.open('www.wikihow.com');
+break;
+} testV+=1;
+var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) history.go(-1);
+return " ";
+} </script>
+<center>
+<form><input value="Enter Protected Area" onclick="passWord()" type="button"></form>
+</center>
 </body></html>
