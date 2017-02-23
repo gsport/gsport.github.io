@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="hu"><head><style></style>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+<script>
+function startTime() {
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+m = checkTime(m);
+s = checkTime(s);
+document.getElementById('txt').innerHTML =
+h + ":" + m + ":" + s;
+var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
+return i;
+}
+</script><title>TIME</title>
+
+</head><body style="color: white; background-color: black;" onload="startTime()" alink="white" link="white" vlink="white">
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+li {
+float: left;
+}
+li a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: #111;
+}
+</style>
+<ul>
+<li><a href="https://gsport.github.io/index.html">HOME</a></li>
+<li><a href="https://gsport.github.io/data/test.html">TIME</a></li>
+<li><a href="https://gsport.github.io/data/SERVER.html">SERVER</a></li>
+<li><a href="https://gsport.github.io/data/INFO.html">INFO</a></li>
+</ul>
+<h1>
+<div style="text-align: center;" id="txt"></div>
+</h1>
+<div style="text-align: center;"><big><big><big><big><big><img style="width: 446px; height: 36px;" alt="" src="Logomakr_8ACa5q.png"></big></big></big></big></big></div>
+<h1></h1>
+</body></html>
