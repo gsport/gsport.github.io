@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu"><link href="/Content/snowflake.css" rel="stylesheet" />
+    <head>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+	
+	    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2"><title>Mikul&aacute;sos visszasz&aacute;ml&aacute;l&oacute;</title>
+		
+		<style type="text/css">
+		body {
+			background: #f6f6f6;
+		}
+
+		.countdownContainer{
+			position: absolute;;
+			top: 50%;
+			left: 50%;
+			transform : translateX(-50%) translateY(-50%);
+			text-align: center;
+			background: #ddd;
+			border: 1px solid #999;
+			padding: 10px;
+			box-shadow: 0 0 5px 3px #ccc;
+		}
+
+		.info {
+			font-size: 80px;
+		}
+		</style></head><body style="background-image: url(https://gsport.github.io/web/christmas-5.jpg); color: white; background-color: rgb(255, 255, 255);" alink="white" link="white" vlink="white">
+		<table style="top: 416px; left: 828px; background-color: rgb(230, 1, 8);" class="countdownContainer">
+			<tbody><tr class="info">
+				<td style="vertical-align: top;"><br>
+      </td>
+<td style="text-align: center;" colspan="4">Mikul&aacute;sos Visszasz&aacute;ml&aacute;l&oacute;<br>
+      <small>BY JAKUS</small><br>
+</td>
+			</tr>
+			<tr class="info">
+				<td style="vertical-align: top;"><br>
+</td>
+                <td id="days">120</td>
+				<td id="hours">4</td>
+				<td id="minutes">12</td>
+				<td id="seconds">22</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top;"><br>
+</td>
+                <td>Napok</td>
+				<td>&Oacute;r&aacute;k</td>
+				<td>Percek</td>
+				<td style="text-align: center;">M&aacute;sodpercek</td>
+			</tr>
+			<tr>
+			    <td style="vertical-align: top;"><br>
+      </td>
+<td style="text-align: center;"><br>
+</td>
+			</tr>
+		</tbody></table>
+		<script type="text/javascript">
+
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2017, 11, 22);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+
+				var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("days").textContent = d;
+				document.getElementById("days").innerText = d;
+
+				document.getElementById("hours").textContent = h;
+				document.getElementById("minutes").textContent = m;
+				document.getElementById("seconds").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+		</script>
+		<div class="winter-is-coming">
+
+        <div class="snow snow--near"></div>
+        <div class="snow snow--near snow--alt"></div>
+
+        <div class="snow snow--mid"></div>
+        <div class="snow snow--mid snow--alt"></div>
+
+        <div class="snow snow--far"></div>
+        <div class="snow snow--far snow--alt"></div>
+    </div>
+	</body></html>
