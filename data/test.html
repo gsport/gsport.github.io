@@ -1,25 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="hu"><head>
-<style></style>
-<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
-<script>
-function startTime() {
-var today = new Date();
-var h = today.getHours();
-var m = today.getMinutes();
-var s = today.getSeconds();
-m = checkTime(m);
-s = checkTime(s);
-document.getElementById('txt').innerHTML =
-h + ":" + m + ":" + s;
-var t = setTimeout(startTime, 500);
+<html style="direction: ltr;" lang="hu"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>OSS</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font.css">
+<style type="text/css">
+/* when @font-face is defined(it is in font.css) you can add the font to any rule by using font-family */
+h1 {
+font-family: 'ni7seg';
 }
-function checkTime(i) {
-if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
-return i;
-}
-</script><title>TIME</title>
-
+</style>
 <style>
 ul {
 list-style-type: none;
@@ -42,23 +33,26 @@ li a:hover {
 background-color: #111;
 }
 </style>
-</head>
-<body style="color: white; background-color: black; direction: ltr;" onload="startTime()" alink="white" link="white" vlink="white">
-<ul>
-<li><a href="https://gsport.github.io/index.html">HOME</a></li>
-<li><a href="https://gsport.github.io/data/test.html">TIME</a></li>
-<li><a href="https://gsport.github.io/data/SERVER.html">SERVER</a></li>
-<li><a href="https://gsport.github.io/data/INFO.html">INFO</a></li>
-</ul>
-<h1>
-<div style="text-align: center;" id="txt"></div>
-</h1>
-<div style="text-align: center;"><big><big><big><big><big><img style="width: 446px; height: 36px;" alt="" src="Logomakr_8ACa5q.png"></big></big></big></big></big></div>
-<h1></h1>
-<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- test -->
-
-<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-1587010535954685" data-ad-slot="6863830054" data-ad-format="auto"></ins>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-1587010535954685",
+enable_page_level_ads: true
+});
 </script>
+</head>
+<body style="color: white; background-color: black; direction: ltr;" alink="white" link="white" vlink="white">
+<span style="font-family: Script;"><span style="font-weight: bold;"><span style="font-family: NI7SEG;"></span></span></span>
+<ul>
+<li><a href="https://gsport.github.io/index.html">Főoldal</a></li>
+<li><a href="https://gsport.github.io/data/test.html">Szolgáltatások</a></li>
+<li><a href="https://gsport.github.io/data/INFO.html">Rólunk</a></li>
+</ul>
+<div id="txt"></div>
+<h1 style="text-align: center; color: rgb(253, 253, 253);"><span style="font-family: NI7SEG;"><big><big><big><span style="font-family: NI7SEG;">Szolgáltatások</span></big></big></big></span></h1>
+<span style="font-weight: bold;"><br>
+</span>
+<span style="font-weight: bold;"></span>
+<a href="data/favicon.ico"> <br>
+</a>
 </body></html>
